@@ -234,6 +234,13 @@
 				<configuration>
 					<message>Creating site for ${project.version}</message>
 				</configuration>
+				<dependencies>
+                      		  <dependency>
+                        	    <groupId>org.eclipse.mylyn.github</groupId>
+                        	    <artifactId>org.eclipse.egit.github.core</artifactId>
+                         		   <version>2.1.5</version>
+                      	 	 </dependency>
+                  		</dependencies>
 				<executions>
 					<execution>
 						<goals>
@@ -327,7 +334,7 @@
 				<version>2.19</version>
 				
 			</plugin>
-			<!--<plugin>
+			<plugin>
 				<artifactId>maven-failsafe-plugin</artifactId>
 				<version>2.19</version>
 				<configuration>
@@ -346,7 +353,7 @@
 						</goals>
 					</execution>
 				</executions>
-			</plugin> -->
+			</plugin> 
 			<plugin>
 				<groupId>net.serenity-bdd.maven.plugins</groupId>
 				<artifactId>serenity-maven-plugin</artifactId>
